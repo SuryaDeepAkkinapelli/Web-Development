@@ -1,0 +1,15 @@
+
+
+The order of specificity is:
+
+Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+
+Specificity Calculation:-
+
+To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000

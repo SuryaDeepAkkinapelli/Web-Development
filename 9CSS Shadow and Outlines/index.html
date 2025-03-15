@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+
+    <style>
+        /* horizontal offset=x-offset
+        vertical offset=y-offset */
+        .box{
+            border:2px solid black;
+            padding:34px;
+            /* For Outset(OUtside the box) */
+            /* box-shadow: h-offset v-offset blur spread color ; */
+            /* box-shadow:5px 15px 5px #30c930; */
+            
+            /* For inset(i=shadow inner the box) */
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+
+            /* box-shadow: inset 5px 10px 5px 2px rgb(49, 201, 235); */
+
+            /* RULE:- 
+                We can apply either inset or outset but not both at the same time For spplying both shadows we can use this property like this*/
+
+            /* For using multiple shadows separate inset and outset with commas*/
+            box-shadow:5px 15px 5px #30c930,inset 5px 10px 5px 2px rgb(49, 201, 235);;
+        }
+        .text-element{
+            border: 2px solid green;
+            border-radius: 23px;
+
+            text-shadow:12px 9px 6px #38aeb4;
+            /*text-shadow: h-offset v-offset blur color;*/
+
+            outline:2px solid black;
+            outline-offset: 15px;
+            /* outline:width style color; */
+
+            /* All the properties like border radius applied to border are also applied to outline.We can also offset the outline as we cant do with border(it is possiblle if we add padding but box size is effected) */
+            
+        }
+        .visi{
+            visibility: hidden;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        i am a box
+    </div>
+    <div class="visi">
+        Hello
+    </div>
+    <p class="text-element">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias dolor tempore laudantium numquam? Quo architecto aut quod voluptatum. Sed perferendis iusto totam ad accusamus porro consequuntur? Nisi, explicabo assumenda commodi illum laboriosam est fuga.
+    </p>
+</body>
+</html>

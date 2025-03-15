@@ -1,0 +1,23 @@
+Text Shadows---------------------------------------
+text-shadow is utilized to give shadows specifically to the text. It can elevate the readability of the text or give it an elegant appearance.
+
+ 
+
+The Syntax for Text-Shadows is as follows:
+
+text-shadow: h-offset v-offset blur color;
+Here is an example:
+
+.text-element { text-shadow: 2px 2px 4px #888888; }
+Outlines-------------------------------------------------------------
+An outline is a line that is drawn around elements, outside the borders, to make the element "stand out". It's commonly used for accessibility purposes, like highlighting focused elements.
+
+The Syntax for Outlines is as follows:
+
+outline: width style color;
+width: Sets the outline width.
+style: Determines the style of the outline such as solid, dotted, or dashed.
+color: Sets the outline color.
+Here is an example:
+
+.button-element:focus { outline: 2px solid blue; }

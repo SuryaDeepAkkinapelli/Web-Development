@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .box {
+            width: 40vw;
+            height: 10vh;
+            border:2px solid black;
+            /* overflow: scroll; */
+            /* If the content is sufficient and not overflowing if we give scroll value to overflow property still there will be a empty scrollbar .TO avoid this use auto as value*/
+
+            overflow: hidden;/*Over flow is hidden */
+            white-space:nowrap;/*Make sure the text stays on a single line*/
+            text-overflow:ellipsis;/*This CSS property adds ... when the text overflow the container instead of letting overflow visible but also the above two properties alsobe used to work,value to those to properties may be different but logic dies.*/
+            /* overflow-x:hidden;
+            overflow-y:scroll; */
+            overflow:hidden auto; 
+        }
+        .box2{
+            width: 40vw;
+            height: 10vh;
+            border:2px solid black;
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+            overflow: hidden auto;/* overflow: overflow-x overflow-y; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a good boy and i like to write Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam velit
+        eveniet recusandae distinctio, incidunt est nesciunt facilis adipisci veritatis natus voluptas tempore deleniti
+        vel molestias cumque doloremque provident corporis optio fugit saepe cupiditate iure in mollitia expedita. Quasi
+        ut veniam vitae, molestias maiores reiciendis a?
+
+    </div>
+    <div class="box2">
+        I am a good boy and i like to write Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam velit
+        eveniet recusandae distinctio, incidunt est nesciunt facilis adipisci veritatis natus voluptas tempore deleniti
+        vel molestias cumque doloremque provident corporis optio fugit saepe cupiditate iure in mollitia expedita. Quasi
+        ut veniam vitae, molestias maiores reiciendis a?
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        
+        
+        .box{
+            border:2px solid blue;
+            /* display:inline; */
+            display:inline-block;
+            /* if display is inline padding and margin wont applied respect to top To fix this keep display as inline-block */
+            width:344px;
+
+            padding:45px;
+            margin:34px;
+        }
+        .box1{
+            /* display:none; */
+            /* the space for this box is removed if this attribute is used */
+            visibility: hidden;
+            /* the space for this box is not removed if this attribute is used */
+        }
+    </style>
+</head>
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">I am a box</div>
+    <div class="box">i am another box</div>
+    <span>he is good</span>
+
+    
+</body>
+</html>

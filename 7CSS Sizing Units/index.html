@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- px is 196th of an inch -->
+     <!-- type CSS  mdn docs reference for more sizing units -->
+    <style>
+        html{
+            font-size:16px;
+        }
+        * {
+            
+            
+            padding: 0;
+        }
+
+        .box {
+            margin: auto;
+            width: 80vw;
+            /* the element centers only when it has a specified width and margin is set to auto because when browser sees the element has a specified width and margin auto it distributes equal space for left and right */
+
+            border: 12px solid black;
+            padding: 22px;
+            box-sizing: border-box;
+            /* width: 1920px; */
+
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            /* height: 80vh; */
+            min-height:80vh;
+            /* if the element has less content due to this property still the height of element will be equal to the value i.e.,80vh */
+            
+            margin: 20px auto;
+            /* margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto; */
+            font-size:10px;
+            background-color: aquamarine;
+            /* margin: all sides;
+            margin: topbottom leftright;
+            margin: top right bottom left;(Clockwise direction)
+             */
+        }
+        .container >div{
+            
+            /* font-size:2em; */
+            /* font-size:2rem; */
+            border:2px solid red;
+
+        }
+    
+        /* here i used em when the font size of parent i.e.,16px so i changed the font size in .container to 10px and used 2em then it changed to 20 . when  you changed to root element rem from em then the property becomes value times of the root element(html is root element)*/
+
+        /* vw means view width which means it adjusts to exact the web site as same as wh */
+        .mycon{
+            background-color: rgb(0, 255, 255);
+            color:yellow;
+            margin: 23px auto;
+            border: 2px solid black;;
+            font-size: 22px;
+            width:80vmax;
+            /* in phone vmin=width vmax=height */
+            /* in PC vmin=height vmax=width */
+        }
+        .container div div{
+            border:2px solid blue;
+            width:50%;
+            font-size: 2em;
+            /* if container font size is 10 then div size will be 2 x10=20px */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+        <!-- to keep this in middle keep margin:auto,this only works if tag is block element but not inine element -->
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vero quae dolores ullam, tenetur architecto autem reprehenderit tempore ipsam, harum exercitationem perferendis nam odit animi expedita? Ipsam tempore fugit reiciendis illo, neque deleniti, alias atque minima laudantium, repellendus explicabo. Alias expedita delectus dolorum rem minima animi possimus ullam velit explicabo asperiores! Dolores placeat dolorum repellendus at eum, accusantium tenetur quisquam qui quidem rem autem, nesciunt maxime fugit aliquid similique nemo cupiditate aspernatur reiciendis eaque quo amet incidunt aut? Aliquam velit qui facilis quibusdam praesentium ullam voluptate nihil dignissimos fugiat asperiores provident omnis ipsa, consectetur vero ratione, explicabo maiores optio. Facilis perferendis totam velit ut sunt sit tenetur sapiente amet, laborum impedit tempore aliquam esse consequatur corporis tempora maxime quibusdam maiores mollitia veritatis molestias minima necessitatibus dolores commodi officia. Reprehenderit ipsam ex reiciendis ut aperiam corrupti optio est harum placeat neque repellat perferendis dolores expedita quam tempora itaque veritatis ipsa, accusantium et fuga quia quidem molestiae tempore fugit. Vero autem distinctio explicabo deleniti porro repellat id. Doloremque assumenda nesciunt magni earum ipsam hic iusto quas a quod aut? Facere, harum laboriosam nostrum nihil odit corporis recusandae doloremque ad sed nulla nemo velit facilis vero alias laudantium quibusdam dolores autem, iure officia qui ratione quaerat totam quis. Accusantium culpa neque illo necessitatibus repellat voluptatum. Molestiae, eos, optio tempore laborum error laboriosam commodi est explicabo consectetur blanditiis quis? Aliquam autem, natus dolorum mollitia praesentium quas ullam velit consequatur exercitationem sint, officiis facere iste accusamus commodi necessitatibus vel possimus tenetur. Ipsa hic atque eos. Ipsam, doloremque. Aliquam recusandae eum nam eligendi numquam soluta unde expedita praesentium repudiandae dolores in quasi temporibus laboriosam voluptatibus iste dolor sint deleniti vel, accusamus magnam hic eius. Eligendi eveniet, ut obcaecati laboriosam iusto beatae culpa sequi corporis iste temporibus? Sapiente fugiat autem non a? Facere repellendus accusamus voluptas modi minus adipisci beatae rem dolorum id in error voluptatum fuga ea blanditiis alias, nobis impedit, debitis, reiciendis molestias molestiae distinctio non! Libero magnam voluptates alias minus dolores nisi exercitationem ipsum possimus nulla rem illum unde error est, nemo et velit minima expedita blanditiis. Amet doloremque a aut harum. Tenetur itaque quis, non adipisci error at fuga minima esse delectus rerum voluptate? Eveniet quia cumque libero eum adipisci, mollitia, ullam quibusdam aut recusandae, labore sequi vero sunt. Animi ipsa beatae nulla explicabo iure, delectus, molestiae perferendis inventore placeat optio recusandae vitae architecto consectetur culpa. Impedit aperiam sapiente qui nobis. Atque sint, explicabo voluptatem numquam, perspiciatis illo autem commodi ipsum cupiditate impedit iusto, corporis perferendis nam quibusdam vel nihil quaerat eius. Sed, corporis veniam. Obcaecati provident inventore tempora officiis maxime quasi sint omnis eligendi distinctio totam repellat ullam repudiandae magnam ea, voluptates mollitia asperiores ipsa! Nesciunt veritatis magni iste sunt minima tenetur corrupti ex doloribus ducimus voluptate maxime numquam totam, ullam quia eos incidunt exercitationem odio sit voluptates pariatur dicta laborum aspernatur quidem voluptatem? Vitae ab beatae non, illo quisquam, dolorem laboriosam enim incidunt reprehenderit eligendi error odio distinctio corrupti blanditiis consequatur saepe maiores ipsam voluptatum! Consequatur rem optio suscipit vel tempora! Aperiam recusandae sint, veniam accusamus laborum dolorem eius odio corrupti quisquam ipsa aliquam, iure, repellendus eveniet similique autem quae officiis odit. Doloribus, quo dicta! Illum tenetur autem facere accusamus soluta error veritatis, quam, assumenda earum quis eaque qui, dolore unde itaque ad! Assumenda fuga doloremque tempora pariatur amet ducimus beatae consectetur, repellat molestias aliquid aperiam! Velit non nemo voluptatibus vitae fugit possimus ipsum ipsam incidunt vero placeat doloremque rem facere praesentium dolor eaque, harum molestias magnam consectetur accusamus, corporis minima voluptas dignissimos dolorem aperiam. Suscipit sunt commodi, iusto aliquam corporis blanditiis nesciunt quod voluptatibus, quas perferendis deserunt reprehenderit voluptatem quae obcaecati aspernatur necessitatibus distinctio at fugit aut nihil. Ea omnis, tempore magni ratione maiores consequatur itaque fugit distinctio unde repudiandae alias praesentium voluptatem beatae numquam, tenetur amet repellat velit quod. Quos voluptates corporis non consectetur quod dignissimos sit architecto obcaecati voluptatibus, sequi excepturi debitis beatae repellat facere possimus sunt aliquid earum quisquam ea praesentium, nemo aliquam illum! Dignissimos, distinctio aliquam, provident illo iusto eaque quam explicabo ex, perferendis natus rem in alias expedita vero vel veniam aut ducimus tenetur labore blanditiis facilis dolor odio excepturi. Consequatur consectetur ad sequi et nulla, error nihil culpa itaque nam, iusto saepe, commodi in maxime quibusdam aliquid necessitatibus voluptate soluta suscipit a. Modi et illo impedit aliquam assumenda? Mollitia illum neque consequatur, laboriosam cumque repellendus asperiores exercitationem ullam eveniet sunt, consequuntur nulla quo. Reiciendis deleniti dicta tempore? Saepe perspiciatis voluptatem exercitationem in odio quasi doloribus voluptatum, ut at eos magnam illum necessitatibus assumenda minus qui fuga soluta deleniti! Tempore maxime earum molestias voluptatum sint dignissimos quasi, reprehenderit quia expedita quidem dicta animi porro nobis cum harum mollitia exercitationem itaque at maiores! Maxime quasi voluptatibus error optio totam incidunt adipisci, porro corrupti quos harum voluptatum exercitationem. Et eius inventore modi cumque ipsa saepe quas qui, fuga voluptatem libero placeat atque fugiat culpa ipsum. Neque laudantium vel dolore officiis! Praesentium facere consequuntur id voluptate dolore laudantium nemo officia dolorum, atque beatae unde sapiente temporibus repudiandae suscipit quo accusamus nihil facilis hic totam? Exercitationem incidunt quam quasi atque dolor, modi repellat commodi ipsum eaque, velit maxime repellendus, reiciendis sunt consectetur suscipit enim veniam vel itaque dolore! Deleniti rem neque laboriosam a quidem tempore magnam eos eveniet exercitationem accusantium possimus blanditiis illo ex ea vel, expedita qui quos alias maxime iste nam porro molestias excepturi! Voluptates vero molestiae nesciunt consequuntur fuga cum delectus ut in placeat deserunt earum, cumque laudantium reprehenderit architecto explicabo aliquid eligendi ea optio est saepe sed illum doloribus, minima omnis? Voluptates tempore totam molestias ex nulla praesentium quibusdam, blanditiis impedit excepturi? Aliquid nesciunt praesentium fugiat nobis doloremque facere beatae labore explicabo animi optio eligendi amet, ipsum quo asperiores iste aliquam eveniet, est debitis. Eius, sit! Esse itaque ipsum quia quis praesentium consequuntur odio quas, qui sapiente vitae deserunt non, ipsam enim quaerat autem, ex odit. Eaque expedita cum ab illo optio omnis recusandae quae provident soluta corrupti rerum odit voluptatum sequi dolor hic, sit facere repellat beatae? Temporibus odio impedit doloribus iure itaque voluptates qui corporis perspiciatis. Quia doloremque nostrum quas aspernatur officia ut odio facilis maiores possimus officiis sed qui, soluta eius ducimus excepturi eaque, sint dolorum aperiam facere pariatur omnis accusantium obcaecati quasi. Voluptatibus minima magnam quia necessitatibus perspiciatis dicta, eius, ipsa eaque vitae eligendi totam dolores. Quis, molestias! Itaque dolor ipsum ab ducimus omnis blanditiis, adipisci similique repudiandae. Nihil unde, earum maxime non aspernatur dolor eligendi aliquid blanditiis culpa debitis. Error cum nostrum cupiditate culpa doloribus et doloremque facere labore nesciunt sed sunt, ex enim nemo obcaecati commodi consectetur optio qui quia! Voluptatibus tenetur vel nam excepturi at. Dignissimos, vel cum in totam et atque commodi ab ipsa earum tempora maxime, voluptatum nam minima mollitia sequi quisquam! Quaerat assumenda provident nam iure praesentium rerum alias eaque voluptate perferendis expedita autem cupiditate dolor quasi reiciendis enim beatae vitae quidem rem quod corporis atque dolorum molestias, odit illum! Eaque saepe quod odio deleniti rem tempora, dolor obcaecati quo eveniet sint minima impedit quis sed ipsa earum excepturi velit praesentium cupiditate. Itaque deserunt perferendis voluptas atque laborum numquam officiis, quas aspernatur ex inventore asperiores tempore dignissimos quae molestiae nostrum saepe obcaecati amet ducimus provident fuga tenetur vitae. Labore ducimus ea delectus pariatur ratione enim dolorum et rem laborum nostrum qui nesciunt odio perferendis beatae sequi porro nam numquam consectetur mollitia, quod dolor reiciendis repellat saepe quis. Accusamus.
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate esse dolore aut a accusantium rem, porro quisquam eum laborum saepe repellendus debitis nam corrupti commodi fuga maiores provident. Asperiores vero excepturi dolorum numquam libero deleniti temporibus et tempora ipsam! In consequuntur nostrum doloribus commodi hic, nesciunt quod sed non voluptatum odit molestiae odio dignissimos, ea fugit ab amet itaque dolore incidunt excepturi deserunt minus! Deserunt sequi laudantium, eveniet maxime labore culpa ex saepe, omnis similique error cum laborum doloribus facilis commodi perspiciatis laboriosam vel vero! Sit tenetur nisi quos aspernatur ea quas cum nemo dolores accusamus, rem ratione odio, alias deserunt. Iusto accusamus quia enim nam itaque. Autem officia illum laboriosam libero consequuntur itaque corrupti voluptatibus nisi in assumenda consequatur, aut ad est cumque possimus nobis quaerat eaque minima quidem cum provident recusandae tenetur explicabo. Esse quia voluptates deleniti ad molestias corporis, quaerat provident dolorem. Corporis unde inventore quasi quae?
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non cum suscipit iusto sequi magnam exercitationem officia rem repellendus fugiat. Quibusdam, quod corporis?</div>
+        </div>
+    </div>
+    <div class="mycon">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, consequuntur. Autem ea consequuntur dolorem nemo fugit labore officia sunt, sequi facere quidem ex?
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

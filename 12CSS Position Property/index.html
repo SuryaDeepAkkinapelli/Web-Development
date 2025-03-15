@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <!-- The default  position of a element is static which doesn't allow top,bottom,z-index attributes.So keep the position as relative-->
+     <!-- position absolutemeans the element searches for the nearest position ancestor and apply the attributes relative to that ancestor.Here box 2 is a absolute element and top and left has some value,so that values are applied realtive to nearest positioned element which is parent div,if no positioned element is found it applies attributes relative to html tag as it is the last or the biggest one-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 43vh;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: blue;
+            /* position:relative;  */
+            /*top:100px;
+            left:10px;  */
+            /* Here the second box is upon second box,if for some reason we want our first box to be on second box,we use z-index.It may be of any positive value except 0 */
+            /* z-index: 2; */
+            
+            position:sticky;
+            top:10px;
+            padding:0;
+            margin: 0;
+            width: 100vw;
+            height: 45px;
+            z-index: 2;
+            
+        }
+
+        .box2 {
+            background-color: red;
+            position: relative;
+            top: 3px;
+            left: 55px;
+            /* position:absolute; */
+        }
+
+        .box3 {
+            background-color: aqua;
+            
+        }
+
+        .box4 {
+            background-color: green;
+            position:fixed;
+            left:25vw;
+            bottom:0px;
+        } 
+        .parent{
+            padding:34px;
+            margin:34px;
+            border:2px solid maroon;
+            position:absolute;
+            /* Exception : tranform,filter,perspective properties can also make an element appear as positioned 
+            transform: translate(0); 
+            filter: invert(); 
+            perspective: 0em;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1">B1</div>
+        <div class="box box2">B2</div>
+        <div class="box box3">B3</div>
+        <div class="box box4">B4</div>
+    </div>
+    <div style="width: 80vw; height: 80vh;">
+        
+    </div>
+</body>
+
+</html>

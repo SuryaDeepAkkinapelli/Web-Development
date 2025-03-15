@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 344px;
+        height: 444px;
+        background-color: aquamarine;
+        border: 5px solid red;
+        background-position: center center;
+        /* background-image: url("https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"); */
+
+        background-image: url("https://us.123rf.com/450wm/progressman/progressman1909/progressman190900115/130695651-woman-in-black-coat-walking-along-the-sea.jpg?ver=6");
+        /* The background-image repeats if the size is not fill completely To avoid this */
+        background-repeat: no-repeat;
+
+        /* background-repeat: repeat-x; */
+        /* Only repeats in x */
+
+        /* background-repeat: repeat-y; */
+        /*Only repeats in y*/
+    }
+    img{
+        width: 344px;
+        height: 444px;
+
+        /* object-fit: cover;
+        object-position: bottom right; */
+        /* the objet will be fit inside the boz with the respective values of w and h but image is not full */
+
+        /* object-fit: contain; */
+        /* The  total image is fit in the box nothing is cut but some space will be left*/
+
+        /* object-fit: fill; */
+        /* The image fills in the box but looks distorted */
+
+        /* object-fit: scale-down; */
+
+        object-position: 10px 12px;
+        object-fit: cover;
+
+        background-clip: border-box;
+        
+        /*border-box
+         The background extends to the outside edge of the border (but underneath the border in z-ordering). */
+
+        /* padding-box 
+        The background extends to the outside edge of the padding. No background is drawn beneath the border.*/
+
+        /*content-box
+        The background is painted within (clipped to) the content box */
+    }
+    div p{
+        color: whitesmoke;
+        text-align: center;
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <p>Hello World</p>
+        <!-- <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="No image"> -->
+    </div>
+
+</body>
+</html>

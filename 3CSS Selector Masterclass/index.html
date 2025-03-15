@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            Background-color:red;
+            color:brown;
+        } */
+    /* CLASS SELECTOR */
+    /*.red means class is red*/
+    .red{
+        Background-color:red;
+        color:brown;
+    }
+    /* ID SELECTOR */
+/*#green means id is green*/ 
+#green{
+color:green;
+}
+/* CHILD SELECTOR */
+div>p{
+    color:blue;
+    background-color:brown;
+}
+/* IT DOESNT EXECUTE IF THERE IS ANY OBSTRACTION BETWEEN IN THIS CASE WE USE THE FOLLOWING METHOD*/
+/* DECENDANT SELECTOR */
+div p{
+    color:rgb(43, 255, 0);
+    background-color: rgb(102, 60, 60);
+}
+/* UNIVERSAL SELECTOR */
+*{
+    margin:0;
+    padding: 0;
+}
+/* PSEUDO SELECTOR */
+a:visited{
+color:yellow;
+}
+/* visited means if we had visited the given link before it will be in yellow */
+a:link{
+    color:green;
+}
+/* if we doesnt had visited the page before it shows green */
+a:active{
+    background-color: red;
+}
+/* if we click on the link it first appears red and then opens */
+a:hover{
+    background-color: aqua;
+}
+/* if we point our cursor on the link it will show aqua */
+/* p:first-child{
+    background-color: rgb(128, 100, 124);
+} */
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">I am div
+    <artlice>
+        <P>Hii I am Para inside div</P>
+    </artlice>
+        
+    </div>
+    <div id="green">I am another div</div>
+    <a target="_blank" href="https://www.google.com">Go To Google</a>
+    <a target="_blank" href="https://www.facebook.com">Go To Facebook</a>
+    <a target="_blank" href="https://www.facebook3.com">Go To Facebook</a>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/* The specificity of this selector is 1 */
+h1{
+    background-color: aqua;
+    color: white;
+}
+/* The specificity of this selector is 10(Class Selector) */
+
+.snis{
+    background-color: blue;
+    color: grey;
+}
+/* The specificity of this selector is 10 */
+
+.it{
+    background-color: red;
+    color: blue;
+}
+/* The specificity of this selector is 100 (ID Selector)*/
+
+#title{
+    background-color: purple !important;
+    color: rgb(245, 220, 220);
+    /* !important ia used to give particular style rule the highest level of importance */
+}
+/* The specificity of this selector is 10 */
+
+.c{
+    background-color: maroon;
+    /* color: pink !important; */
+}
+
+/* The specificity of this selector is 10 */
+/* IT is a element selector */
+[data-x=a]{
+    background-color: whitesmoke;
+    color: red;
+}
+/* The specificity of this selector is 1+10=11 */
+
+h1.c{
+    background-color: maroon;
+    color: pink;
+}
+/* The specificity of this selector is 1+10+10+10+10=41 */
+/* hover is called as pseudo classes */
+a.harryclass.rohan-class[href]:hover {
+  color: red;
+  /* [href] is attribute selector and hover is pseudo selector */
+}
+/* !IMPORTANT CAN OVERWRITE INLINE CSS */
+*{
+    background-color: antiquewhite;
+}
+
+</style>
+<body>
+    <h1 class="snis it c"  data-x="a">Ajay Kumar Reddy</h1>
+</body>
+</html>

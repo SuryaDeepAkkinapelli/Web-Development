@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+</head>
+<style>
+    .container{
+        width: 80vw;
+        height: 80vw;
+        border: 3px solid blueviolet;
+    }
+    .box{
+        width: 50px;
+        height: 50px;
+        background-color: beige;
+        border: 3px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* transform: rotate(180deg); */
+        /*Rotates by 90degrees*/
+
+        /* transform: rotate(0.25turn); */
+        /*1 turn = 360degrees*/
+
+        /* transform: rotateX(45deg); */
+        /*Rotates wrt x-axis*/
+        
+        /* transform:scale(1.2); */
+        /* The size enlarges 1.2 times */
+
+        /* transform: skew(45deg); */
+        /* assume 1 and -1 are pulled (grid way explanation)*/
+        
+        /* transform: translate(100%); */
+        /* It will be translated wrt value */
+        
+        /* transform: rotate(50deg) translate(45px) skew(20deg); */
+        /* We can also use multiple properties */
+
+
+        transform-origin: 0% 0%;
+        transform: rotate(1deg);
+        /* it will rotate wrt that origin */
+    }
+    .first{
+        display: flex;
+        align-self: flex-start;
+    }
+    .sec{
+        display: flex;
+        align-self: flex-start;
+        justify-content: right;
+    }
+</style>
+<body>
+    <div class="container">
+
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

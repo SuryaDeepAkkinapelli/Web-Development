@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box MOdel</title>
+    <style>
+        .box{
+background-color: aqua;
+        }
+        .box1{color: red;
+       padding:10px; 
+    margin:25px;
+    border:3px solid blue;
+    height:200px;
+    box-sizing: border-box;
+}
+.box2{
+    color: orange;
+    padding:10px;
+    margin:5px;
+    border:35px solid black;
+    height:200px;
+    border-radius: 20px;
+    /*height means height for content*/
+
+    box-sizing: border-box;
+    /*This attribute means height=size of content+padding+border*/
+}
+/*
+-------------MARGIN COLLAPSE-------------
+Here there is a case called margin collapse which means here the first div margin is 25 px which is apllied to all sides i.e., top,bottom,left,right and also second box has 5px of margin in all sides bit here the space between  or the margin between two box is 25 px,this is known as margin collapse.here the margin between them will be 25 px as it is the large one upon comparing both.*/
+
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+
+</body>
+</html>

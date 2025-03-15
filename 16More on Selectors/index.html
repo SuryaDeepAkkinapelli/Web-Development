@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selelctors</title>
+</head>
+<style>
+    /* .boxes .box:first-child{
+        background-color: aqua;
+    } */
+     .box::first-line{
+        background-color: aqua;
+     }
+     .boxes *{
+        color: brown;
+        border: 1px solid red;
+     }
+     p,a,.box,[data-color="primary"]{
+        margin: 20px 0px;
+     }/*This is called grouping.*/
+
+     .box:nth-child(odd){
+        background-color: bisque;
+
+     }
+     .boxes::before{
+        content: "Akkinapelli Suryadeep";
+     }
+     .boxes::after{
+        content: "Akkinapelli Suryadeep";
+     }
+     ::selection{
+        color:black;
+        background-color: red;
+     }
+     
+     /* .box:nth-last-child(2){
+        color: chocolate;
+     } */
+      .box::first-letter{
+        background-color: aquamarine;
+        font-size: 20px;
+      }
+      input::placeholder{
+        color: chartreuse;
+      }
+</style>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae et porro eaque ad similique maiores natus, consequuntur quibusdam modi. Corrupti a aperiam facere tenetur alias, consequatur veniam iste iure nihil, voluptas qui culpa placeat perspiciatis nulla dolorum nostrum. Repudiandae, aliquid!</div>
+        <div data-color="primary" class="box">I am another box</div>
+        <div class="box">I am Another Box</div>
+        <div class="box">I am Another Box</div>
+    </div>
+    <label for="username">Enter your name here:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input id="username" type="text" placeholder="Enter your name here">
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <style>
+        ul{
+            display: flex;
+        }
+        nav>ul>li{
+            /* the default property of li is display: list-item; we can also remove by give value block to display property but is not a good use.Instead we use none as value for list-style property */
+            list-style: none;
+
+            /* background-color: yellow;  */
+            /* Here if list style is not none,the marker is outside the listitem to include marker inside the list we use this property */
+            
+            /* list-style-position: inside;  */
+            /* border:2px solid black;  */
+            /* As we can see the border is applied to marker also,as it is now included in the list by using list-style-position property */
+            
+            /* We can also add image as list marker by using this property */
+            /* list-style-image: url("Nishith.png"); */
+            
+            /* list-style: devanagari; */
+
+            /* We can also represent emojis as markers */
+            /* To open emoji press win+. */
+            
+            /* list-style-type: "💕"; */
+            /* list-style-type: "❤"; */
+            
+            /* We can do this in  a single step */
+            /* list-style: circle inside url("Nishith.png"); */
+            /* It means that we can what type of marker and is it inside or ouside of list item */
+ /* ------------NAV BAR-------------------------------------- */
+            padding: 23px;
+
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

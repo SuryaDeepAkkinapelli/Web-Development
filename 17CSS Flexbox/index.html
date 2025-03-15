@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: 3px solid red;
+        display: flex;
+        /* By default flex make items to right */
+        height: 80vh;
+
+        /* justify-content: center; */
+        
+        align-content: flex-end;
+        
+
+        /* flex-direction: column; */
+        /*After applying flex property the items are arranged in a single row.If we use flex-direction:column then the items are are arranged in one column.*/
+
+        /* flex-direction: column-reverse; */
+
+        flex-wrap: wrap;
+        /* Stops overflow by allowing items into new line */
+
+        align-content: flex-start;
+        /* If items are in one line we use align items,if items are in multilined align content is used */
+
+        /* There is no justify-items in flexbox */
+
+        /* flex-wrap: wrap-reverse; */
+
+        flex-flow: row wrap;
+        /* flex-flow: flex-direction flex-wrap; */
+        gap: 5px 20px;
+        /* gap: row-gap column-gap; */
+    }
+    .box{
+        flex-grow: 1;
+        height: 62px;
+        width: 62px;
+        background-color: red;
+        /* margin: 5px; */
+        border: 2px solid black;
+        
+    }
+    .order-1{
+        order: 1;
+    }
+    .order-2{
+        order: 2;
+    }
+    .order-3{
+        order: 3;
+    }
+    /* More the order,the box will be laster.Default order is 0.So we can say items are arranged nby order value */
+    .item-1{
+        flex-grow: 2;
+        flex-shrink: 2;
+        /* If this property has value n it means in adjustment of width the selective element shrinks n times than other elements */
+
+        align-self: flex-end;
+        /* In this the selective element's position can be changed */
+    }
+    /* It is if the items are in one line the items have some defalult value x,by changing it to n im some specific element it will occupy n x x part */
+
+</style>
+<body>
+    <div class="container">
+        <div class="box item-1">1</div>
+        <div class="box">2</div>
+        <div class="box order-1">Order 3</div>
+        <div class="box order-3">Order4</div>
+        <div class="box">5</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <!-- <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div> -->
+    </div>
+</body>
+</html>
